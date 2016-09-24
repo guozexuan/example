@@ -1,0 +1,172 @@
+@import "../public/reset";
+@import "../public/css3function";
+@import "../public/public";
+@import "../public/Config";
+
+@import "../public/CommonMineHeader";
+@import "../public/CommonTipLayer";
+@import "../public/CommonLoadingLayer";
+
+html,body,.container {
+  background: #fff;
+}
+.section-paid-words {
+  overflow: hidden;
+}
+.paid-words-box {
+  background: #fff6eb;
+  overflow: hidden;
+  dl {
+    margin: 0 1rem;
+  }
+  dt {
+    line-height: 48/@r;
+    width: 144/@r;
+    padding: 0 12/@r;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    background: #cea373;
+    .br(.25rem);
+  }
+  dd {
+    & > div {
+      overflow: hidden;
+      line-height: 1.5rem;
+    }
+  }
+  .clear {
+    margin: 20/@r 0;
+  }
+  .left {
+    width: 82/@r;
+    margin-left: .75rem;
+  }
+  .empty {
+    color: #999;
+  }
+  .icon {
+    width: 100%;
+    height: 1.5rem;
+  }
+  .bg-xin-dong {
+    background: transparent url('@{IMAGE-PATH}iconXinDong.png') no-repeat center;
+    -webkit-background-size: 42/@r 40/@r;
+    background-size: 42/@r 40/@r;
+  }
+  .bg-zuan-shi {
+    background: transparent url('@{IMAGE-PATH}iconZuanShi.png') no-repeat center;
+    -webkit-background-size: 49/@r 41/@r;
+    background-size: 49/@r 41/@r;
+  }
+  .count {
+    line-height: 80/@r;
+  }
+}
+
+.names-box {
+  overflow: hidden;
+  background: #fff;
+  .slogan {
+    line-height: 40/@r;
+    margin: 1rem;
+    & > .left {
+      font-size: 50/@r;
+      color: #ee4830;
+      margin-right: .25rem;
+    }
+    & > .auto {
+      font-size: .875rem;
+      color: #ee4830;
+    }
+  }
+}
+.name-group-list {
+  font-size: 1rem;
+  li {
+    & > .left {
+      width: 112/@r;
+      padding-top: .5rem;
+      text-align: center;
+    }
+    .icon-text {
+      line-height: 72/@r;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 56/@r;
+    }
+    .bg-xin-dong {
+      background: transparent url('@{IMAGE-PATH}iconXinDong.png') no-repeat center;
+      -webkit-background-size: 42/@r 40/@r;
+      background-size: 42/@r 40/@r;
+    }
+    .bg-zuan-shi {
+      background: transparent url('@{IMAGE-PATH}iconZuanShi.png') no-repeat center;
+      -webkit-background-size: 49/@r 41/@r;
+      background-size: 49/@r 41/@r;
+    }
+    .count {
+      color: #666;
+    }
+    & > .auto {
+      border-left: 1px solid #ccc;
+    }
+  }
+  li:last-child {
+    ul {
+      border-bottom: none;
+    }
+  }
+}
+.name-list {
+  margin: 0 auto;
+  padding: .5rem 0 0;
+  border-bottom: 1px solid #ccc;
+  & > li {
+    display: block;
+    float: left;
+    width: 33%;
+    margin-bottom: .5rem;
+    & > div {
+      width: 160/@r;
+      height: 72/@r;
+      line-height: 72/@r;
+      margin: 0 auto;
+      background: #eadac8;
+      text-align: center;
+      color: #837855;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      .br(.25rem);
+    }
+  }
+}
+
+.slogan-long {
+  margin: .5rem .5rem 0;
+  background: #fff6eb;
+  color: #666;
+  font-size: .875rem;
+  overflow: hidden;
+  padding: .5rem;
+  p {
+    margin: .5rem 0;
+  }
+}
+
+.btn-group {
+  margin: .5rem;
+  .left, .right {
+    width: 48%;
+  }
+  .stress {
+    text-align: center;
+    font-size: .75rem;
+    color:#ee4830;
+    line-height: 72/@r;
+  }
+}

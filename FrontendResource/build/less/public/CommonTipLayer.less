@@ -1,0 +1,30 @@
+
+.common-tip-layer {
+  position: fixed;
+  z-index: 19491001;
+  top: 50%;
+  left: 50%;
+  width: 16rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+  margin-left: -8rem;
+  .back {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    .br(5px);
+    .bs(0 0 1rem #000);
+  }
+  .front {
+    position: absolute;
+    width: 16rem;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    line-height: 3rem;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+  }
+}

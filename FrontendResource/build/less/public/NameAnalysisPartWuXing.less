@@ -1,0 +1,188 @@
+.zi-xing-panel {
+  height: auto;
+  overflow: hidden;
+  margin: .5rem;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  color: #464646;
+  .br(3px);
+/*  .title {
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 2.375rem;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    font-size: 1.125rem;
+    .yellow-b-stress {
+      font-size: 1.125rem;
+      color: #c8a069;
+    }
+  }*/
+  .yellow-stress {
+    color: #c8a069;
+  }
+  p {
+    margin: 1rem 1rem;
+  }
+}
+
+.zi-xing-table {
+  margin: .5rem;
+  table {
+    width: 100%;
+  }
+  thead {
+    th {
+      background: #f5ebdd;
+      color: #c8a069;
+    }
+  }
+  tbody {
+    tr {
+      td:first-child {
+        color: #c8a069;
+        background: #f5ebdd;
+      }
+    }
+    td {
+      div {
+        display: inline-block;
+        width: 33%;
+        max-width: 1.5rem;
+      }
+    }
+  }
+  td,th {
+    border: 1px solid #e7d5bc;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.4375rem;
+    background: #fff8f0;
+    &.w22 {
+      width: 22%;
+    }
+    &.w12 {
+      width: 12%;
+    }
+  }
+}
+
+.wu-xing-detail {
+  margin: .5rem;
+  background: #f5f5f5;
+  padding: .5rem;
+  font-size: .875rem;
+  color: #666;
+  overflow: hidden;
+  div {
+    line-height: 34/@r;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .text1 {
+    color: #837855;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  .stress {
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+.word-analysis {
+  margin: .5rem;
+}
+.analysis-list {
+  .left {
+    width: 144/@r;
+    .word-box {
+      width: 120/@r;
+      text-align: center;
+    }
+    .pin-yin {
+      line-height: 48/@r;
+      text-align: center;
+      font-size: 36/@r;
+    }
+    .word {
+      width: 120/@r;
+      height: 120/@r;
+      line-height: 120/@r;
+      background: transparent url('@{IMAGE-PATH}wordBox.jpg') no-repeat center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      border: 1px solid #dab994;
+      font-size: 80/@r;
+    }
+    .wu-xing-box {
+      text-align: center;
+      margin-top: 10/@r;
+    }
+    .wu-xing {
+      display: inline-block;
+      vertical-align: top;
+      width: 36/@r;
+      height: 36/@r;
+      line-height: 36/@r;
+      font-size: .875rem;
+      color: #fff;
+      text-align: center;
+      background: #ccc;
+      .br(.25rem);
+      &.c-jin {
+        background: @c-jin;
+      }
+      &.c-mu {
+        background: @c-mu;
+      }
+      &.c-shui {
+        background: @c-shui;
+      }
+      &.c-huo {
+        background: @c-huo;
+      }
+      &.c-tu {
+        background: @c-tu;
+      }
+    }
+  }
+  .auto {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem;
+    font-size: .875rem;
+    color: #333;
+    p {
+      margin-bottom: 40/@r;
+      line-height: 34/@r;
+    }
+  }
+  & > li:last-child {
+    .auto {
+      border-bottom: none;
+    }
+  }
+}
+
+.reason-box {
+  margin: .75rem;
+  font-size: .875rem;
+  color: #333;
+  p {
+    text-indent: 2em;
+    margin-bottom: .75rem;
+  }
+  .poem-box {
+    margin-bottom: .75rem;
+    text-align: center;
+    color: #666;
+    .title {
+      font-size: 36/@r;
+    }
+    .author {
+      margin-bottom: .5rem;
+    }
+  }
+}

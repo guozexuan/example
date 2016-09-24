@@ -1,0 +1,170 @@
+@import "../public/reset";
+@import "../public/css3function";
+@import "../public/public";
+@import "../public/Config";
+
+@import "../public/CommonMineHeader";
+@import "../public/NameAnalysisPartSanCaiWuGe";
+@import "../public/NameAnalysisPartShengXiao";
+@import "../public/NameAnalysisPartWuXing";
+@import "../public/CommonTipLayer";
+@import "../public/CommonLoadingLayer";
+
+
+//五行颜色
+@c-jin: #ffbf24;
+@c-mu: #bfd684;
+@c-shui: #74d5ce;
+@c-huo: #ee4830;
+@c-tu: #cea373;
+
+//吉凶颜色
+@c-daji: #ee482e;
+@c-xiaoji: #f0702f;
+@c-daxiong: #666;
+@c-xiaoXiong: #359d96;
+
+html,body,.container {
+  background: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.name-box {
+  background: #fff6eb;
+  overflow: hidden;
+  padding-top: 8/@r;
+  .info-box {
+    margin: 1rem .5rem;
+    padding: .75rem .5rem;
+    line-height: 40/@r;
+    background: #fff;
+    font-size: .875rem;
+    .value {
+      color: #837855;
+    }
+  }
+}
+.word-list {
+  display: block;
+  text-align: center;
+
+  & > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 172/@r;
+    height: 174/@r;
+    margin-right: 1rem;
+    position: relative;
+  }
+  & > li:last-child {
+    margin-right: 0;
+  }
+  .word-box {
+    width: 122/@r;
+    position: relative;
+  }
+  .pin-yin {
+    height: 50/@r;
+    line-height: 50/@r;
+  }
+  .word {
+    width: 118/@r;
+    height: 118/@r;
+    line-height: 118/@r;
+    border: 1px solid #dab994;
+    background: transparent url('@{IMAGE-PATH}wordBox.jpg') no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .wu-xing {
+    background: blue;
+    position: absolute;
+    bottom: 2px;
+    left: 132/@r;
+    width: 36/@r;
+    height: 36/@r;
+    line-height: 36/@r;
+    text-align: center;
+    color: #fff;
+    font-size: .875rem;
+    .br(.25rem);
+    &.bg-jin {
+      background: @c-jin;
+    }
+    &.bg-mu {
+      background: @c-mu;
+    }
+    &.bg-shui {
+      background: @c-shui;
+    }
+    &.bg-huo {
+      background: @c-huo;
+    }
+    &.bg-tu {
+      background: @c-tu;
+    }
+  }
+}
+
+.name-analysis-nav {
+  margin: 10/@r .4375rem;
+  @h: 2rem;
+  ul {
+
+  }
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    & > div {
+      width: 148/@r;
+      height: @h;
+      line-height: @h;
+      background: #eadac8;
+      color: #cea373;
+      font-size: 1rem;
+      cursor: pointer;
+      .br(.25rem)
+    }
+    &.active {
+      & > div {
+        background: #cea373;
+        color: #fff8db;
+        //margin: 0 auto;
+      }
+    }
+    &.immutable {
+      & > div {
+        background: #ffdad8;
+        color:#f4adaa;
+        position: relative;
+      }
+      i {
+        display: block;
+        position:absolute;
+        width: .5rem;
+        height: .5rem;
+        left: .25rem;
+        top: 0;
+        background: #ff2000;
+        .br(50%);
+      }
+    }
+  }
+}
+
+.btn-group {
+  margin: .5rem;
+  .left, .right {
+    width: 48%;
+  }
+  .stress {
+    text-align: center;
+    font-size: .75rem;
+    color:#ee4830;
+    line-height: 72/@r;
+  }
+}

@@ -1,0 +1,189 @@
+@import "./reset";
+@import "./public";
+@import "./css3function";
+
+@color: #be2837;
+.ryan-date-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8888;
+  color: #282828;
+  .stress { color: @color; }
+  .back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #000;
+    cursor: pointer;
+    opacity: .5;
+  }
+  .front {
+    width: 250px;
+    height: 278px;
+    background: #fff;
+    position: fixed;
+    z-index: 100000;
+    top: 50%;
+    left: 50%;
+    margin-top: -139px;
+    margin-left: -125px;
+    border: 1px solid #faf0eb;
+    .br(.25rem);
+  }
+  .result {
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+    border-bottom: 1px solid @color;
+    box-sizing: border-box;
+  }
+  .date-box {
+    height: 160px;
+    position: relative;
+    .selected-date-layer {
+      position: absolute;
+      height: 32px;
+      width: 100%;
+      background: blue;
+      opacity: .3;
+      top: 64px;
+      z-index: -1;
+    }
+  }
+  .date-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    .border-none {border-right:none;}
+    td {
+      box-sizing: border-box;
+      height: 160px;
+      width: 33.3%;
+      overflow: auto;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+  }
+  .date-common-box {
+    //height: 100%;
+    height: 160px;
+    overflow: auto;
+    div {
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .current {
+      background: #ccf;
+    }
+    .prevent {
+      color: #ccc;
+    }
+  }
+  .mode {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    & > div {
+      display: inline-block;
+      width: 50%;
+      height: 48px;
+      vertical-align: middle;
+    }
+    .pl0d5 {
+      padding-left: .5rem;
+    }
+    .pr0d5 {
+      padding-right: .5rem;
+    }
+  }
+  .mode-left {
+    text-align: left;
+    overflow: hidden;
+    color: #666;
+  }
+  .mode-right {
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn {
+    height: 38px;
+    span {
+      display:inline-block;
+      width: 50%;
+      height: 38px;
+      line-height: 38px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #666;
+      cursor: pointer;
+    }
+    .left-btn {
+      border-right: 1px solid #ddd;
+    }
+  }
+}
+
+.checkboxThree{
+  width:48px;
+  height:18px;
+  background:#eee;
+  top:13px;
+  left: 68px;
+  border-radius:18px;
+  position:relative;
+  & > div {
+    width:24px;
+    height:16px;
+    border-radius:24px;
+    cursor:pointer;
+    position:relative;
+    top:1px;
+    z-index:1;
+    left:4px;
+    background:#ccc;
+    &.checked {
+      left:20px;
+      background: mediumpurple;
+    }
+  }
+}
+
+/*.checkboxThree label {
+  display:block;
+   width:24px;
+   height:16px;
+   border-radius:24px;
+   //-webkit-transition: all .5s ease;
+   //-moz-transition: all .5s ease;
+   //-o-transition: all .5s ease;
+   //-ms-transition: all .5s ease;
+   //transition: all .5s ease;
+   cursor:pointer;
+   position:absolute;
+   top:1px;
+   z-index:1;
+   left:4px;
+   background:#ccc;
+ }*/
+
+/*.checkboxThree input {
+  opacity: 0;
+}*/
+
+/*
+.checkboxThree input[type=checkbox]:checked + label {
+    left:20px;
+    background: mediumpurple;
+ }*/

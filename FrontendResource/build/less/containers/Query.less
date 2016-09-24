@@ -1,0 +1,92 @@
+@import "../public/reset";
+@import "../public/css3function";
+@import "../public/public";
+@import "../public/Config";
+
+@import "../public/CommonMineHeader";
+@import "../public/CommonTipLayer";
+@import "../public/CommonLoadingLayer";
+
+.input-box {
+  @h: 68/@r;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: .5rem 0;
+  padding: .5rem;
+  font-size: .75rem;
+  .slogan {
+    color: #666;
+    margin: .75rem 0;
+    .stress {
+      font-weight: bold;
+    }
+  }
+  .right {
+    width: 180/@r;
+    text-align: center;
+    height: @h;
+    line-height: @h;
+    color: #fff;
+    font-size: 1rem;
+    background: #837855;
+    margin-left: .5rem;
+    cursor: pointer;
+    .br(.25rem);
+  }
+  .auto {
+    height: @h;
+    line-height: @h;
+    input {
+      width: 100%;
+      background: #f0f0f0;
+      border: none;
+      outline: none;
+      height: @h;
+      line-height: @h;
+      font-size: .875rem;
+      padding-left: .5rem;
+      .br(.25rem);
+    }
+  }
+}
+
+.title-box {
+  background: #fff;
+  overflow: hidden;
+}
+
+.order-list {
+  margin: .5rem 20/@r;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  .left {
+    font-weight: bold;
+  }
+  .auto {
+    color: #666;
+  }
+  li {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    .br(.25rem);
+    &.paid {
+      background: #fff6eb;
+      .status {
+        color: #3c5f25;
+      }
+    }
+    &.to-pay {
+      background: #f0f0f0;
+      .status {
+        color: #ee4830;
+      }
+    }
+  }
+}
+.order-empty {
+  line-height: 8rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #ccc;
+}
