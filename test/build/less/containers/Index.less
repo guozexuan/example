@@ -1,9 +1,13 @@
 @import '../public/public';
 @import '../public/reset';
 @import '../public/config';
+@import '../public/css3function';
 
 @r:32rem;
-
+img{
+  width: 100%;
+  vertical-align: top;
+}
 .nav{
   background-color: #fff;
   .tab{
@@ -40,8 +44,150 @@
 }
 .box{
   margin: 0 .5rem;
-  .box-top-left{
-    width: .75rem;
-    background: url('@{IMG_URL}left_red.png') no-repeat;
+  & > .box-top{
+    .box-top-left{
+      width: .75rem;
+      height: 2rem;
+      background: url('@{IMG_URL}left_red.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .box-top-right{
+      width: .75rem;
+      height: 2rem;
+      background: url('@{IMG_URL}right_red.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .box-top-middle{
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      color: #ffebc3;
+      font-size: .875rem;
+      background: url('@{IMG_URL}middle_red.png') repeat-x;
+      background-size: auto 100%;
+    }
   }
+  & > .box-bottom{
+    div{
+      height: .75rem;
+    }
+    .box-bottom-left{
+      width: .75rem;
+      background-image: url('@{IMG_URL}theme_box_bottom_left.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 100% 100%;
+    }
+    .box-bottom-right{
+      width: .75rem;
+      background-image: url('@{IMG_URL}theme_box_bottom_right.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100% 100%;
+    }
+    .box-bottom-middle{
+      background-image: url('@{IMG_URL}theme_box_bottom_middle.png');
+      background-repeat: repeat-x;
+      background-position: top left;
+      background-size: auto 100%;
+    }
+  }
+}
+.box-middle{
+  .box-middle-left{
+    background: url('@{IMG_URL}theme_box_middle_left.png') repeat-y;
+    background-size: .75rem auto;
+    background-position: top left;
+
+  }
+  .box-middle-right{
+    background: url('@{IMG_URL}theme_box_middle_right.png') repeat-y;
+    background-size: .75rem auto;
+    background-position: top right;
+  }
+  .box-middle-middle{
+    background-color: #fff;
+    margin: 0 .5rem;
+    padding: 0 .25rem;
+  }
+  .about-content{
+    padding-top: .5rem;
+    li{
+      padding: 0 .5rem 0 .15rem;
+      box-sizing: border-box;
+      height: 4.125rem;
+      width: 100%;
+      background-color: #f3ebe4;
+      .br(.25rem);
+      margin-bottom: .25rem;
+    }
+    .last-li{
+      margin-bottom: 0;
+    }
+    .red{
+      color:#be2837;
+    }
+    .left{
+      display: inline-block;
+      width: 4.125rem;
+      height: 4.125rem;
+      /*background-image: url('@{IMG_URL}index_01.png');*/
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 3.8125rem 3.8125rem;
+    }
+    .auto{
+      font-size: .8125rem;
+      color: #282828;
+      text-align: justify;
+      padding: .46875rem 0 0 .625rem;
+    }
+    .icon-one{
+      background-image: url('@{IMG_URL}index_01.png');
+    }
+    .icon-two{
+      background-image: url('@{IMG_URL}index_02.png');
+    }
+    .icon-there{
+      background-image: url('@{IMG_URL}index_03.png');
+    }
+    .icon-four{
+      background-image: url('@{IMG_URL}index_04.png');
+    }
+    .icon-five{
+      background-image: url('@{IMG_URL}index_05.png');
+    }
+    .icon-six{
+      background-image: url('@{IMG_URL}index_06.png');
+    }
+    .icon-seven{
+      background-image: url('@{IMG_URL}index_07.png');
+    }
+    .icon-eight{
+      background-image: url('@{IMG_URL}index_08.png');
+    }
+  }
+}
+.line-box{
+  margin: .625rem .75rem;
+  .line{
+    height: 1px;
+    width: 100%;
+    background-color: #e1e1e1;
+  }
+}
+
+.form-box{
+  .form-list{
+    margin: 0 .5rem;
+    background: #fff;
+    line-height: 2.5rem;
+    border: 1px solid #efdcd3;
+    position: relative;
+    .br(.25rem);
+    & > li{
+      border-bottom: 1px solid #efdcd3;
+    }
+  }
+
 }

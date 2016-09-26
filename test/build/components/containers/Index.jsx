@@ -31,18 +31,73 @@ class Index extends Component {
                     </ul>
                 </nav>
                 <div className="banner">
-                    {/*<img src={ this.state.IMG_URL + 'banner.jpg' } alt=""/>*/}
-                    <img src="../dist/images/banner.jpg" alt=""/>
+                    <img src={ this.state.IMG_URL + 'banner.jpg' } alt=""/>
+                    {/*<img src="../dist/images/banner.jpg" alt=""/>*/}
                 </div>
                 <CommonVideoComponents src="http://v.qq.com/iframe/player.html?vid=a0314n1mlij&tiny=0&auto=0"/>
                 <section className="box">
-                    <div className="box-top">
-                        <div className="left box-top-left">
-
-                        </div>
+                    <div className="box-top clear">
+                        <div className="left box-top-left"></div>
                         <div className="right box-top-right"></div>
                         <div className="auto box-top-middle">分析流年八大主体运势</div>
                     </div>
+                    <div className="box-middle">
+                        <div className="box-middle-left">
+                            <div className="box-middle-right">
+                                <div className="box-middle-middle">
+                                    <ul className="clear about-content">
+                                        <li>
+                                            <sapn className="left icon-one"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-two"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-there"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-four"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-five"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-six"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li>
+                                            <sapn className="left icon-seven"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                        <li className="last-li">
+                                            <sapn className="left icon-eight"></sapn>
+                                            <div className="auto">整体运势，命宫趋向，掌握幸福关键，<span className="red">这一年能否开开心心、健健康康、财源滚滚的度过？</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="clear box-bottom">
+                        <div className="left box-bottom-left"></div>
+                        <div className="right box-bottom-right"></div>
+                        <div className="auto box-bottom-middle"></div>
+                    </div>
+                </section>
+                <div className="line-box">
+                    <div className="line"></div>
+                </div>
+                <section className="form-box">
+                    <form>
+                        <ul className="form-list">
+                            <li>ss</li>
+                        </ul>
+                    </form>
                 </section>
             </section>
         )
