@@ -177,17 +177,78 @@ img{
   }
 }
 
-.form-box{
-  .form-list{
-    margin: 0 .5rem;
-    background: #fff;
-    line-height: 2.5rem;
-    border: 1px solid #efdcd3;
+
+.form-list{
+  font-size: .9375rem;
+  margin: 0 .5rem;
+  background: #fff;
+  line-height: 2.5rem;
+  border: 1px solid #efdcd3;
+  position: relative;
+  .br(.25rem);
+  & > li{
+    border-bottom: 1px solid #efdcd3;
+  }
+  .left{
+    width: 4.5625rem;
+    color: #898989;
+    text-align: center;
+    margin-right: .625rem;
+  }
+  .auto{
+    overflow: hidden;
+  }
+  input[type="text"] {
+    width: 90%;
+    height: 2rem;
+    border: none;
+    outline: none;
+  }
+  .right {
+    width: 1.5rem;
+    height: 2.1875rem;
+    background: transparent url('@{IMG_URL}index_08.png');
+    background-size: 100%;
+  }
+}
+.radio{
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+  .circle{
+    width: .875rem;
+    height: .875rem;
+    border:1px solid #939393;
+    .br(100%);
+    display: inline-block;
     position: relative;
-    .br(.25rem);
-    & > li{
-      border-bottom: 1px solid #efdcd3;
+    top: .125rem;
+
+    span{
+      display: inline-block;
+      width: .625rem;
+      height: .625rem;
+      position: absolute;
+      top: .125rem;
+      left: .125rem;
+      background: #fff;
+      .br(100%);
     }
   }
-
+}
+.radio-box{
+  .ml1{
+    margin-left: .4375rem;
+  }
+  .ml2{
+    margin-left: 2.8125rem;
+  }
+  .current{
+    .circle{
+      border: 1px solid #be2837;
+      span{
+        background: #be2837;
+      }
+    }
+  }
 }

@@ -95,7 +95,65 @@ class Index extends Component {
                 <section className="form-box">
                     <form>
                         <ul className="form-list">
-                            <li>ss</li>
+                            <li>
+                                <div className="left">
+                                    <span>您的姓名</span>
+                                </div>
+                                <div className="auto">
+                                    <input type="text" name="name" value={this.state.name} onChange={this.eventChangeHandle} onBlur={this.eventNameBlurHandle} placeholder="请输入" />
+                                </div>
+                            </li>
+                            <li>
+                                <div className="left">
+                                    <span>您的性别</span>
+                                </div>
+                                <div className="auto radio-box">
+                                    <div className="radio current">
+                                        <div className="circle">
+                                            <span></span>
+                                        </div>
+                                        <span className="ml1">男</span>
+                                    </div>
+                                    <div className="radio ml2">
+                                        <div className="circle">
+                                            <span></span>
+                                        </div>
+                                        <span className="ml1">女</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="left">
+                                    <span>出生日期</span>
+                                </div>
+                                <div className="right"></div>
+                                <div className="auto">
+                                    <input type="text" ref="birthDay"
+                                           value={this.state.birthDay}
+                                           data-last-date={this.state.birthDay}
+                                           onClick={this.eventBirthDayInputClickHandle}
+                                           onFocus={function(event){event.target.blur();}}
+                                           readOnly="readonly"
+                                           placeholder="请选择"
+                                        />
+                                </div>
+                            </li>
+                            <li>
+                                <div className="left">
+                                    <span>出生时辰</span>
+                                </div>
+                                <div className="auto">
+                                    <input type="text" name="name" value={this.state.name} onChange={this.eventChangeHandle} onBlur={this.eventNameBlurHandle} placeholder="请选择" />
+                                </div>
+                            </li>
+                            <li>
+                                <div className="left">
+                                    <span>您的邮箱</span>
+                                </div>
+                                <div className="auto">
+                                    <input type="text" name="name" value={this.state.name} onChange={this.eventChangeHandle} onBlur={this.eventNameBlurHandle} placeholder="请输入" />
+                                </div>
+                            </li>
                         </ul>
                     </form>
                 </section>
