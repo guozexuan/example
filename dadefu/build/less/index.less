@@ -1,0 +1,96 @@
+@import "./common/css3function";
+@import "./common/public";
+@import "./common/reset";
+@import "./common/popup";
+
+@r:32rem;
+.container html ,body{
+  background-color: #fff;
+}
+img{
+  width: 100%;
+  vertical-align: top;
+}
+.select{
+  padding: 20/@r 24/@r 30/@r;
+  .title{
+    font-size: 30/@r;
+    line-height: 100/@r;
+  }
+  ul{
+    font-size: 30/@r;
+    li{
+      border: 1px solid #eaeaea;
+      background-color: #fff;
+      .br(10/@r);
+      width: 48%;
+      text-align: center;
+    }
+    .current{
+      background-color: #eb3b3f;
+      span{
+        color: #fff;
+      }
+    }
+    span{
+      display: inline-block;
+      line-height: 68/@r;
+      //padding: 0 38/@r;
+    }
+  }
+  .intro{
+    padding: 20/@r 26/@r;
+    font-size: 26/@r;
+    color: #989898;
+  }
+  .btn-buy{
+    width: 100%;
+    background-color: #eb3b3f;
+    .br(10/@r);
+    span{
+      display: block;
+      font-size: 34/@r;
+      line-height: 88/@r;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+textarea{
+  width: 100%;
+  height: 5.5rem;
+  line-height: 1.2rem;
+  border: none;
+  padding-top: .75rem;
+  resize:none;
+  box-sizing: border-box;
+}
+
+/*
+* 登录提示弹窗
+*/
+.login-popup{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: 10;
+  .popup-wrapper{
+    position: relative;
+    min-width: 20rem;
+    max-width: 30rem;
+    height: 100%;
+    margin: 0 auto;
+    background:rgba(0,0,0,0.7);
+  }
+  .img-box{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+  }
+}
